@@ -1,5 +1,8 @@
-set(GUIS_SOURCES_CPP FixDialog.cpp ParserGui.cpp)
-set(GUIS_SOURCES_H FixDialog.h ParserGui.h)
+project(MathStatGui)
 
-add_library(guis SHARED ${GUIS_SOURCES_CPP} ${GUIS_SOURCES_H})
-target_link_libraries(guis core) 
+set(GUIS_SOURCES_CPP FixDialog.cpp ParserGui.cpp)
+
+add_library(guis STATIC ${GUIS_SOURCES_CPP})
+add_dependencies(guis core)
+
+target_link_libraries(guis core parser)

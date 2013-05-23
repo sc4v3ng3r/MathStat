@@ -1,21 +1,11 @@
 #include "Parser.h"
-#include <Qt/qdebug.h>
+#include <QDebug>
 
-Parser::Parser(QObject* parent): QObject(parent)
-{
-  
-}
-
-void Parser::interpreter(QString data)
+void Parser::interpreter(const QString& data)
 {
   m_data = data.split(' ',QString::SkipEmptyParts,Qt::CaseInsensitive);
-  
-  Q_FOREACH(QString text, m_data){
+
+  Q_FOREACH(const QString& text, m_data){
     qDebug() << text;
   }
-}
-
-Parser::~Parser()
-{
-
 }

@@ -1,22 +1,17 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-#include <Qt/qobject.h>
-#include <Qt/qstringlist.h>
+#include <QObject>
+#include <QStringList>
 
 class Parser : public QObject {
   Q_OBJECT
-  
+
 private:
   QStringList m_data;
- 
+
 public:
- Parser(QObject* parent=0);
- virtual ~Parser();
- void interpreter(QString data);
+ void interpreter(const QString& data);
 
-public Q_SLOTS:
-
-  
 };
 #endif
