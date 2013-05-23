@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="histogram.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-81.613204"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="721"
+     inkscape:window-x="-2"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3777"
+       transform="matrix(0.78628544,0,0,0.78628544,81.032096,119.74044)">
+      <rect
+         y="144.76196"
+         x="-97.302681"
+         height="702.49524"
+         width="126.48335"
+         id="rect2985"
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:11.30912876;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:11.30912876;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3755"
+         width="128.28262"
+         height="536.72699"
+         x="38.059013"
+         y="311.97137" />
+      <rect
+         y="570.6676"
+         x="175.6207"
+         height="277.00018"
+         width="131.87605"
+         id="rect3757"
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:11.30912876;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:11.30912876;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3759"
+         width="126.72491"
+         height="678.79858"
+         x="317.28482"
+         y="169.12086" />
+      <rect
+         y="469.70145"
+         x="451.74185"
+         height="377.19495"
+         width="130.33342"
+         id="rect3761"
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:11.30912876;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <rect
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:11.30912876;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3763"
+         width="131.39534"
+         height="306.4422"
+         x="587.47223"
+         y="540.98505" />
+      <rect
+         y="600.33594"
+         x="723.23895"
+         height="247.58586"
+         width="132.38451"
+         id="rect3765"
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:11.30912876;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3773"
+         y="979.98749"
+         x="-77.438614"
+         style="font-size:150.45257568px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Dingbats;-inkscape-font-specification:Dingbats"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans Bold"
+           y="979.98749"
+           x="-77.438614"
+           id="tspan3775"
+           sodipodi:role="line">HISTOGRAM</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,1 @@
+set(GUIS_SOURCES_CPP FixDialog.cpp ParserGui.cpp) 
