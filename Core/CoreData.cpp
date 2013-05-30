@@ -64,22 +64,8 @@ void CoreData::recalcAll(const double first, const double last, const int size)
 // WARNING TEMPORARY METHOD
 void CoreData::debug() const { qDebug() << "DATA" << m_amplitude.toString() << m_classesNumber << m_width.toString(); }
 
-// WARNING APROXIMAR PARA UM VALOR DIVISIVEL POR 2 DE ACORDO COM A FREQUENCIA DECIMAL!
-
 void CoreData::aproxWidth(unsigned int decimalFrequency)
 {
-/*  
-  switch(decimalFrequency){
-    case 0:
-     Number newWidth(m_width.toString(0)); // WARNING temporary!
-      break;
-      
-    default:
-      Number newWidth(m_width.toString(decimalFrequency));
-      //qDebug() << "Fazer tratamento, talvez seta parte inteira e parte decimal aproximada ^^";
-      break;
-  }*/
-  
   qDebug() << "Width Aprox " << m_width.aprox(decimalFrequency).toString();
   Number newWidth(m_width.aprox(decimalFrequency));
   m_width = newWidth;

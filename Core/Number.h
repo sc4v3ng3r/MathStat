@@ -55,6 +55,8 @@ public:
   
   inline bool operator<(const Number& number) const { return (this->toDouble() < number.toDouble()); }
   inline bool operator>(const Number& number) const { return !operator<(number); }
+  inline bool operator>=(const Number& number) const { if (this->toDouble() >= number.toDouble()) return true; else return false; }
+  inline bool operator<=(const Number& number) const { if (this->toDouble() <= number.toDouble()) return true; else return false;}
   
   inline Number operator+(const Number& rhs) const { return Number( ( (this->toDouble() ) + (rhs.toDouble()) ) ); }
   inline Number operator+(const double number) const {return Number( ( (this->toDouble()) + (number) ) ); }

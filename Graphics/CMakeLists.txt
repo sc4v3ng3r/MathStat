@@ -1,9 +1,8 @@
+project(MathStatHIstogram)
 
 set(HISTOGRAM_SOURCES_CPP Histogram.cpp)
-set(HISTOGRAM_SOURCES_H Histogram.h)
-set(QWTLIBS "/usr/lib64/libqwt.so.6.0.1") # only here!
+set(QWTLIBS -lqwt) # only here!
 
-add_library(histogram SHARED ${HISTOGRAM_SOURCES_CPP} 
-			     ${HISTOGRAM_SOURCES_H})
+add_library(histogram STATIC ${HISTOGRAM_SOURCES_CPP})
 
 target_link_libraries(histogram ${QWTLIBS})

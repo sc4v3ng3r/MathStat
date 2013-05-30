@@ -20,6 +20,10 @@ private:
   Number m_decil;
   Number m_percentil;
   Number m_variance;
+  Number const *m_width;
+  QList<StatClass> const *  m_statClasses;
+  QList<Number> const *m_rol;
+  
   
   inline void setAverageBySum(const QList<Number>& rol);
   inline void setAverageByHalfPoint(const QList<StatClass>& statisticClasses, const uint rolSize);

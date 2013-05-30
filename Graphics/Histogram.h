@@ -4,6 +4,7 @@
 #include <qwt/qwt_plot.h>
 #include <qwt/qwt_plot_histogram.h>
 #include <qwt/qwt_interval.h>
+#include <qwt/qwt_plot_curve.h>
 
 class Histogram : public QwtPlot{
   Q_OBJECT
@@ -26,6 +27,9 @@ Q_SIGNALS:
 
 private:
   QwtPlotHistogram m_histograms;
+  QwtPlotCurve m_curve;
   Histogram::GraphicType m_state;
+  
+  void setMark(/*const QVector<QwtIntervalSample>& intervals*/);
 };
 #endif

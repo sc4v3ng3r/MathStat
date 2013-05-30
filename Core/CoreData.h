@@ -23,7 +23,7 @@ public:
   Number amplitude() const;
   Number width() const;
   unsigned classesNumber() const;
-  void aproxWidth(unsigned decimalFrequency); // WARNING nao esta completo
+  void aproxWidth(unsigned decimalFrequency);
   
 private:
   void redefineWidth();

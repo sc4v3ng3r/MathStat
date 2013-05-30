@@ -3,10 +3,13 @@
 #include <Qt/qdebug.h>
 #include <QtGui/qbrush.h>
 
+#define ROWS_DEFAULT 7
+#define COLUMNS_DEFAULT 9
+
 StatClassModel::StatClassModel(const QList< StatClass >& data, QObject* parent): QAbstractTableModel(parent)
   , m_data(data)
-  , m_columns(9)
-  , m_rows(7)
+  , m_columns(COLUMNS_DEFAULT)
+  , m_rows(data.size())
   , m_fix(5)
   , m_modalClass(2)
   , m_fixDialog(0)
@@ -14,8 +17,8 @@ StatClassModel::StatClassModel(const QList< StatClass >& data, QObject* parent):
 
 StatClassModel::StatClassModel(QObject* parent): QAbstractTableModel(parent)
   , m_data(QList<StatClass>())
-  , m_columns(9)
-  , m_rows(7)
+  , m_columns(COLUMNS_DEFAULT)
+  , m_rows(ROWS_DEFAULT)
   , m_fix(2)
   , m_fixDialog(0)
 {}
@@ -115,8 +118,8 @@ QVariant StatClassModel::data(const QModelIndex& index, int role) const
 	QBrush background(Qt::red);
 	return background;
       } else if (m_data[row].absoluteFrequency() == 0){ // when find a empty class colour of green
-	QBrush background(Qt::green);
-	return background;
+	  QBrush background(Qt::green);
+	  return background;
       }
       break;
       
@@ -126,7 +129,6 @@ QVariant StatClassModel::data(const QModelIndex& index, int role) const
     default:
       break;  
   }
-
   return QVariant();
 }
 
@@ -140,9 +142,9 @@ void StatClassModel::addData(const QList< StatClass >& data)
     insertRows(m_rows, (rows%m_rows), QModelIndex());
     qDebug() << "Adicionado" << rows%m_rows << "linhas";
     
-  } else if (rows < m_rows){  // WARNING CONSERTAR A REMOCAO DE LINHAS...
+  } else if (rows < m_rows){
     qDebug() << "Removendo" << m_rows-rows << "linhas";
-    removeRows(m_rows,(m_rows-rows), QModelIndex());
+    removeRows((m_rows-rows)+1,(m_rows-rows), QModelIndex());
   }
   
   findModalClass();
@@ -210,22 +212,17 @@ int StatClassModel::size() const
 void StatClassModel::findModalClass()
 {
   uint index=0;
-//  int frequency= m_data[0].absoluteFrequency();
   
-  for(int i=1; i< m_data.size(); i++){
-    //qDebug() << "frequency" << frequency << "<" << m_data[i].absoluteFrequency() << "?";
-    if (m_data[index].absoluteFrequency() < m_data[i].absoluteFrequency()){
+  for(int i=1; i< m_data.size(); i++)
+    if (m_data[index].absoluteFrequency() < m_data[i].absoluteFrequency())
       index=i;
-      qDebug() << "Yep!" << index << "\n";
-  //    frequency = m_data[i].absoluteFrequency();
-    } 
-  }
+    
   m_modalClass = index;
 }
 
 QModelIndex StatClassModel::getIndex(const unsigned index) const
 { 
- int row = index/m_columns; //
+ int row = index/m_columns;
  int column = (index%m_columns);
  
  if (column < 0)

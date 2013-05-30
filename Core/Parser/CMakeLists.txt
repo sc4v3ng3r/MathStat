@@ -1,4 +1,5 @@
-set(PARSER_SOURCES_CPP Parser.cpp)
-set(PARSER_SOURCES_H Parser.h)
+project(MathStatParser)
 
-add_library(parser SHARED ${SOURCES_CPP} ${SOURCES_H})
+set(PARSER_SOURCES_CPP Parser.cpp)
+
+add_library(parser STATIC ${PARSER_SOURCES_CPP})
